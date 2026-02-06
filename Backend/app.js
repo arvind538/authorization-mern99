@@ -15,13 +15,20 @@ const corsOptions = {
     credentials: true,
 };
 
-app.use(cors(corsOptions))
+// app.use(cors(corsOptions))
+app.use(
+    cors({
+        origin: process.env.frontend_URI,
+        methods: ["GET", "POST", "PUT", "DELETE"],
+        credentials: true,
+    })
+);
 
 app.use(express.json());
 
-app.use("/api/auth", authRoute)
-app.use("/api/form/", contactRoute);
-app.use("/api/data", serviceRoute);
+app.use("/api/auth", authRoute) // user,login, register,home
+app.use("/api/form/", contactRoute); //service, 
+app.use("/api/data", serviceRoute); //contact
 app.use("/api/admin", adminRoute);
 
 

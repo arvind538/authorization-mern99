@@ -10,7 +10,7 @@ const Service = () => {
   return (
     <div className="service ">
       <div className="container m-5 p-5">
-        <h2 className="main-heading ml-100 m-5 p-5 underline ">Service Pages</h2>
+        <h2 className="main-heading  m-5 p-5 underline ">Service </h2>
       </div>
 
       <div className="container service-grid grid-three-cols cursor-pointer">

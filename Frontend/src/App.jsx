@@ -17,15 +17,20 @@ import AdminLayout from "./components/Layouts/Admin-Layout";
 import AdminUsers from "./Pages/Admin-Users";
 import AdminContacts from "./Pages/Admin-Contacts";
 import AdminUpdate from "./Pages/Admin-Update";
+import Banner from "./Pages/Banner";
+
+import Promotional from "./components/Promotional";
 
 const App = () => {
   return (
     <BrowserRouter>
+      <Banner />
       <Header />
 
       <Routes>
         {/* Public Routes */}
         <Route path="/" element={<Home />} />
+        
         <Route path="/about" element={<About />} />
         <Route path="/service" element={<Service />} />
         <Route path="/contact" element={<Contact />} />
@@ -43,7 +48,8 @@ const App = () => {
         {/* 404 */}
         <Route path="*" element={<Error />} />
       </Routes>
-
+      
+      <Promotional />
       <Footer />
     </BrowserRouter>
   );

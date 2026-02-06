@@ -5,8 +5,8 @@ import { FaSquareFacebook, FaSquareInstagram } from "react-icons/fa6";
 
 const Footer = () => {
     return (
-        <footer className="bg-gray-900 text-gray-300 mt-16">
-            <div className="max-w-7xl mx-auto px-6 py-12 grid gap-10 sm:grid-cols-2 md:grid-cols-4">
+        <footer className="bg-gray-900 text-gray-300 mt-16 ">
+            <div className="max-w-7xl mx-auto px-6 py-12 grid gap-10 sm:grid-cols-2 md:grid-cols-4 ml-10">
 
                 {/* Brand */}
                 <div>
@@ -27,8 +27,8 @@ const Footer = () => {
                     </p>
 
                     {/* Social Icons */}
-                    <h1 className="text-2xl">Social Media:</h1>
-                    <div className="flex gap-4 mt-4 text-xl">
+                    <h1 className="text-2xl text-white m-2 p-2">Social Media</h1>
+                    <div className="flex gap-4 mt-4 text-xl ml-5">
 
                         <a href="/" className="hover:text-blue-500 transition">
                             <FaLinkedin />
@@ -46,11 +46,11 @@ const Footer = () => {
                 </div>
 
                 {/* Quick Links */}
-                <div>
-                    <h3>
-                        Quick Links
-                    </h3>
-                    <ul className="space-y-2 text-sm ml-25">
+                <div className="ml-2">
+
+                    <ul className="space-y-2 text-sm ">
+                        <h1 className="text-2xl font-bold  text-white">Quick Links</h1>
+
                         <li><NavLink to="/" className="hover:text-white">Home</NavLink></li>
                         <li><NavLink to="/about" className="hover:text-white">About</NavLink></li>
                         <li><NavLink to="/service" className="hover:text-white">Services</NavLink></li>
@@ -60,10 +60,9 @@ const Footer = () => {
 
                 {/* Services */}
                 <div>
-                    <h3>
-                        Our Services
-                    </h3>
-                    <ul className="space-y-2 text-sm ml-22">
+
+                    <ul className="space-y-2 text-sm ">
+                        <h1 className="text-2xl font-bold  text-white">Service Links</h1>
                         <li>Home Services</li>
                         <li>Maintenance</li>
                         <li>Consulting</li>
@@ -73,13 +72,12 @@ const Footer = () => {
 
                 {/* Contact */}
                 <div>
-                    <h3>
-                        Contact Us
-                    </h3>
-                    <ul className="space-y-2 text-sm ml-23">
-                        <li>Email: support@apnawebsite.com</li>
+
+                    <ul className="space-y-2 text-sm  ">
+                        <h1 className="text-2xl font-bold  text-white">Contact Us</h1>
+                        <li>Email:support@apnawebsite.com</li>
                         <li>Phone: +91 98765 43210</li>
-                        <li>Location: India</li>
+                        <li>Location: Rajasthan, India </li>
                     </ul>
                 </div>
 

@@ -1,0 +1,101 @@
+/* Main Section */
+.section {
+    padding: 40px 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f4f6f9;
+}
+
+/* Container Grid */
+.container.login-grid {
+    max-width: 1100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Image */
+.register-logo img {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Form Section */
+.form {
+    width: 100%;
+
+}
+
+.form h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size:xx-large;
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Inputs */
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #007bff;
+}
+
+/* Button */
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+    .container.login-grid {
+        grid-template-columns: 1fr;
+       
+    }
+
+    .register-logo img {
+        max-width: 250px;
+        margin: auto;
+    }
+
+    .form h1 {
+        font-size: 24px;
+    }
+}

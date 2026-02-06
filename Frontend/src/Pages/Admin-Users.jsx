@@ -71,7 +71,7 @@ const AdminUsers = () => {
     return (
         <section className="admin-section">
             <div className="container">
-                <h1 className="admin-heading text-center">Admin Users Data</h1>
+                <h1 className="admin-heading ml-90 underline">Admin Users Data</h1>
             </div>
 
             <div className="container admin-users">

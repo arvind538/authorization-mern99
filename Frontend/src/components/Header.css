@@ -1,0 +1,102 @@
+/* HEADER */
+.header {
+    background: #111827;
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+/* CONTAINER */
+.header-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.logo h2 {
+    color: white;
+    font-size: 20px;
+}
+
+/* NAVIGATION */
+.nav-list {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-list a {
+    color: #d1d5db;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-list a:hover {
+    color: white;
+}
+
+/* REGISTER BUTTON */
+.register-btn {
+    background: #4f46e5;
+    padding: 6px 14px;
+    border-radius: 6px;
+    color: white !important;
+}
+
+/* MOBILE MENU ICON */
+.menu-toggle {
+    display: none;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav {
+        position: absolute;
+        top: 65px;
+        right: 0;
+        background: #111827;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+
+    .nav.active {
+        max-height: 400px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        gap: 20px;
+    }
+}

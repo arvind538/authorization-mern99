@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../store/auth";
-
+import { toast } from "react-toastify";
+import "./Contact.css"
 const defaultContactFormData = {
     username: "",
     email: "",
@@ -36,7 +37,7 @@ const Contact = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         console.log(contact);
-        alert("Contact message Successfully");
+        toast.success("Contact message Successfully");
 
         try {
             const response = await fetch(`${API}/api/form/contact`, {
@@ -51,6 +52,7 @@ const Contact = () => {
                 const data = await response.json();
                 console.log(data);
             }
+
             navigate("/");
         } catch (error) {
             // console.log("Error from Conatct Side");

@@ -22,7 +22,7 @@ const AdminLayout = () => {
             <header>
                 <div className="container contaier-flow">
                     <nav>
-                        <ul className="admin-nav">
+                        <ul className="admin-nav ">
 
                             <li>
                                 <NavLink to="/admin/users" >
